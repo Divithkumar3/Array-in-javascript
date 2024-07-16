@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="main">Hello Divithkumar</span><br>
+    <button onclick="hello()">Change</button>
+    <script>
+        function hello(){
+            document.getElementById("main").style="color:red;background-color:yellow;font-size:100px"
+           }
+
+          //array creation
+          let arr=["Divithkumar","Sellakili","Asokan"]
+          console.log(arr)
+
+          //Array Sorting
+          let a=[2,40,3,50,1,4]
+          document.write(a.sort(),"<br>","<br>");
+          document.write(a.reverse(),"<br>","<br>");
+          console.log(a.sort());
+          console.log(a.reverse());
+          
+          //Array manipulation
+          const num=[1,2,3,4,5]   //push
+          num1=(num.push(6,7,8))
+          document.write(num,"<br>","<br>")   
+          
+          const value=[10,20,30,40,50]    //shift
+          value1=(value.shift())
+          console.log(value1)
+          document.write(value1,"<br>","<br>")
+
+          const remove=[11,12,13,14,15]       //pop
+          remove1=remove.pop()
+          document.write(remove,"<br>","<br>")
+
+          const undo=[20,30,40,50]    //unshift
+          undo1=undo.unshift(15)
+          document.write(undo,"<br>","<br>")
+
+          //array filtering
+          let abc=['apple','banana','crispy','dog']
+          let abc1=abc.filter(abc=>abc.length>=5)     //filter
+          document.write(abc1)
+
+          //array searching
+          let search=[1,2,3,4,5,6]
+          let search1=search.indexOf(4)     //indexof
+          console.log(search1)
+
+          let s=[1,2,3,4,5,6]
+          let s1=s.find(element=>element===5)     //find
+          console.log(s1)
+
+          // array mapping
+          let m=[10,20,30]
+          console.log(m.map(x=>x+2))
+          console.log(m.map(x=>x-2))          //mapping
+          console.log(m.map(x=>x*2)) 
+          console.log(m.map(x=>x/2))      
+          
+          //array join and split
+          let array=[1,2,6]                //join
+          console.log(array.join(10))
+
+          const arr1="Eswar mama"
+          const arr2=arr1.split(" ")     //split
+          console.log(arr2)
+
+    </script>
+</body>
+</html>
